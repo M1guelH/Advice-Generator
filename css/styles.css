@@ -1,0 +1,141 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+
+    /* ### Neutral */
+
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+
+    --mainFont:'Manrope', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--DarkBlue);
+    
+}
+
+a{
+    text-decoration: none;
+    color: var(--NeonGreen);
+}
+
+.card {
+    display: flex;
+    width: 50rem;
+    height: 30rem;
+    background-color:var(--DarkGrayishBlue);
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media (max-width : 375px) {
+    .card {
+        width: 90%;
+        height: 35rem;
+    }
+
+   
+
+    
+}
+
+footer {
+    width: 100%;
+    color: var(--LightCyan);
+    text-align: center;
+    position: absolute;
+    top: 95%;
+    font-family: var(--mainFont);
+    
+    
+    
+
+}
+
+.card__id{
+    margin-top: 2rem;
+    color: var(--NeonGreen);
+    font-family: var(--mainFont);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.card__text{
+    display: flex;
+    margin: 2rem;
+    margin-top: 0;
+    width: 90%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    color: var(--LightCyan);
+    font-family: var(--mainFont);
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.card__button{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--NeonGreen);
+    border: none;
+    position: absolute;
+    top: 91%;
+    cursor: pointer;
+
+}
+
+.card__button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 var(--NeonGreen);
+    
+}
+
+.card__imgDesk {
+    display: block;
+}
+
+
+.card__imgMob {
+     display:none ;
+}
+
+
+@media screen and (max-width: 375px){
+
+    .card__imgDesk {
+           display: none;
+    }
+
+
+    .card__imgMob {
+            display: block;
+    }
+
+
+
+}
