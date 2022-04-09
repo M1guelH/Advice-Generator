@@ -115,26 +115,12 @@ footer {
     
 }
 
-.card__imgDesk {
-    display: block;
-}
 
-
-.card__imgMob {
-     display:none ;
-}
 
 
 @media screen and (max-width: 600px){
 
-    .card__imgDesk {
-           display: none;
-    }
-
-
-    .card__imgMob {
-            display: block;
-    }
+  
     
     .card__button:hover{
         box-shadow: none;
