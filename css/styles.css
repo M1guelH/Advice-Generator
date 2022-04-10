@@ -76,7 +76,7 @@ footer {
 }
 
 .card__id{
-    margin-top: 2rem;
+    margin-top: 4rem;
     color: var(--NeonGreen);
     font-family: var(--mainFont);
     font-size: 14px;
