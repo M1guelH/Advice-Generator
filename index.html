@@ -20,20 +20,16 @@
   
 
   <main class="card">
-    <h1 class="card__id">
-      <p id="AdviceId"></p>
+    
+    <h1 class="card__id" id="AdviceId"></h1>
      
+    <h2 class="card__text" id="AdviceText"></h2>
 
-    </h1>
-
-    <article class="card__text" id="AdviceText"></article>
-
-    <article>
-      <picture>
+    <picture>
         <source srcset="./images/pattern-divider-desktop.svg" media="(min-width: 600px)">
         <img src="./images/pattern-divider-mobile.svg" alt="divider">
-       </picture>
-    </article>
+    </picture>
+  
 
     <button class="card__button" type="button" onclick="randomAdvice()" aria-label="new advice"><img src="./images/icon-dice.svg" alt="dice"></button>
 
